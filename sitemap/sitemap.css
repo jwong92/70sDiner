@@ -1,0 +1,229 @@
+@font-face {
+  font-family: "Milkshake";
+  src: url("../Fonts/Milkshake.otf") format("opentype");
+  src: url("../Fonts/Milkshake.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OstrichSans";
+  src: url("../Fonts/ostrich-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OstrichSans";
+  src: url("../Fonts/OstrichSans-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("../Fonts/futura-med-cond.ttf") format("truetype");
+  font-weight:normal;
+  font-style:normal;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("../Fonts/futura-bold.ttf");
+  font-weight:bold;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+header, body, footer, main, section, aside, h1, h2, h3, h4, p, nav, form, button, li, ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-size: 10px;
+  font-family: 'Futura',sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: black;
+  overflow-x: hidden;
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #D92818;
+}
+.linkStyle
+{
+	font-size: 3em;
+	margin-left: 15%;
+	padding-top:2%;
+}
+ul {
+  list-style-type: none;
+}
+
+.bg {
+  opacity: 0.7;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: -1;
+}
+
+.contact-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1290px;
+  margin: 2rem auto;
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 2.5em;
+  font-family: 'OstrichSans', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  margin-top: 0.8rem;
+}
+
+.hidden {
+  display: none;
+}
+
+#header {
+  padding-top: 20px;
+}
+
+
+/* Logo */
+.title_box {
+  position: relative;
+  height: 95px;
+  width: 225px;
+  margin: 0px auto 20px auto;
+  font-family: "Milkshake", sans-serif;
+  text-shadow: 0 0 7px #FFF, 0 0 25px #D92818;
+}
+
+ .title_box span{
+  color: #FF3B3F;
+}
+
+.The70 {
+  position: absolute;
+  font-size: 35px;
+  transform: rotate(-20deg);
+}
+
+.Diner {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  font-size: 80px;
+}
+
+.base_bg {
+  position: absolute;
+  top: 32px;
+  left: 7px;
+  width: 230px;
+  height:70px;
+  border-radius: 20px;
+  background-color: #4AC0BF;
+}
+
+.base_tp {
+  position: absolute;
+  width: 70px;
+  height:70px;
+  top: 5px;
+  left: 85px;
+  border-radius: 40px;
+  background-color: #4AC0BF;
+}
+
+#navbar {
+  background-color: #4AC0BF;
+  height: 2.2rem;
+  padding-top: 0.1rem;
+  position: absolute;
+  width: 100%;
+  top: calc(105px - 1.8rem);
+}
+
+.drop-down {
+  display: flex;
+  justify-content: space-around;
+}
+
+[class^="drop-down-content"] {
+  display: none;
+  padding-bottom: 0.5rem;
+}
+
+.drop-down li a {
+  font-size: 2.5em;
+  padding-left: 0.5rem;
+}
+
+.drop-down li:nth-child(1), .drop-down li:nth-child(2) {
+  width: 15em;
+}
+
+.drop-down-style {
+  background-color:#4AC0BF;
+  border-radius: 0 0 15px 15px;
+}
+
+#linkList > a {
+  color: #000;
+}
+
+#linkList > a:hover {
+  color: #D92818;
+}
+
+/* footer */
+
+#footer {
+	position: absolute;
+	right:0;
+	bottom: 0;
+	left: 0;
+	background-color: #50BFBF;
+	color: #000;
+	font-size: 2em;
+}
+
+.bg-bar-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content:flex-start;
+  padding: 1rem;
+  width: 100%;
+}
+
+@keyframes motorcycle {
+  0% {transform: translateX(0px);}
+  100% {
+    transform: translateX(100vw);
+  }
+}

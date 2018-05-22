@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Events & Bookings</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+  <link rel="stylesheet" type="text/css" href="../css/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="../css/jquery-ui.structure.css">
+  <link rel="stylesheet" type="text/css" href="../css/events.css">
+</head>
+<body>
+  <header>
+    <nav class="nav_bar">
+      <div class="content-wrapper">
+        <div id="navigation" class="nav-flex"></div>
+      </div>
+    </nav>
+    <div class="title_box">
+      <div class="base_bg"></div>
+      <div class="base_tp"></div>
+      <span class="The70">The 70's</span>
+      <span class="Diner">Diner</span>
+    </div>
+  </header>
+  <section id="banner">
+    <img id="mainImg" src="../images/burger2.jpg" alt="Awesome Burger" title="Check Out Our Burger"/>
+  </section>
+  <main class="content-wrapper">
+    <h1>Events & Bookings</h1>
+    <div id="confirmation">
+      <h2>Reservation Confirmation</h2>
+      <p>Thanks for making a reservation at the 70's Diner.</p>
+      <p>We look forward to seeing you on <span id="reserved_date"></span> at <span id="reserved_time"></span>!</p>
+      <p>For any changes, questions or cancellations, please contact us at 1(866) 70S-CALL or 1(866) 707-2255.</p>
+    </div>
+    <form id="booking" action="#" method="get" name="booking_reservation">
+      <h2>Book Reservation:</h2>
+      <div>
+        <label name="customer_fname">First Name:
+          <input type="text" id="cust_fname" name="customer_fname"/>
+        </label>
+      </div>
+      <div>
+        <label name="customer_lname">Last Name:
+          <input type="text" id="cust_lname" name="customer_lname"/>
+        </label>
+      </div>
+      <div>
+        <label name="customer_email">Email:
+          <input type="text" id="cust_email" name="customer_email"/>
+        </label>
+      </div>
+      <div>
+        <label name="number_of_guests" ># of Guests:
+          <select id="numb_guests" name="guests_input">
+            <option value="0">#</option>
+          </select>
+        </label>
+      </div>
+      <div>
+        <label name="book_date">Date:
+          <input type="text" id="date_input"/>
+        </label>
+      </div>
+      <div>
+        <label>Time:
+          <select id="time_input" name="time_options">
+            <option value="none">HH:MM</option>
+          </select>
+        </label>
+      </div>
+      <div>
+      <input id="book_btn" type="submit" name="submit_booking" value="Book Reservation"/>
+    </form>
+    <div id="error-msg"></div>
+  </main>
+  <footer>
+    <div class="content-wrapper">
+      <p>© Copyright The 70's Diner 2018</p>
+    </div>
+  </footer>
+  <script src="../js/jquery-3.2.1.min.js"></script>
+  <script src="../js/jquery-ui.js"></script>
+  <script src="../js/general.js"></script>
+  <script src="../js/events.js"></script>
+</body>
+</html>

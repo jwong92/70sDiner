@@ -1,0 +1,269 @@
+
+/*FONTS*/
+@font-face {
+  font-family: "Milkshake";
+  src: url('../compatible/milkshake-webfont.woff2') format('woff2'),
+       url('../compatible/milkshake-webfont.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+    font-family: 'OstrichSansReg';
+    src: url('../compatible/ostrich-regular-webfont.woff2') format('woff2'),
+         url('../compatible/ostrich-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'futura';
+    src: url('../compatible/futura_bold_font-webfont.woff2') format('woff2'),
+         url('../compatible/futura_bold_font-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'futura';
+    src: url('../compatible/futura_light_bt-webfont.woff2') format('woff2'),
+         url('../compatible/futura_light_bt-webfont.woff') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'futura';
+    src: url('../compatible/futura_medium_condensed_bt-webfont.woff2') format('woff2'),
+         url('../compatible/futura_medium_condensed_bt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* DEFAULT */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body, header, main, footer, h1, h2, h3, h4, h5, h6, p, div, li, ul, ol, span, section, aside, nav {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Futura', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 10px;
+  background-color: #EFEFEF;
+  color: #000;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+a:hover {
+  color: #D92818;
+}
+
+/* HEADER */
+
+
+
+/* LOGO AND NAV */
+.nav-flex {
+  display:flex;
+  flex-wrap:nowrap;
+  margin-top: 4px; }
+
+.nav-item { flex: 1 0 0;}
+
+/* ==== HEADER ==== */
+.title_box {
+  position: relative;
+  height: 95px;
+  width: 225px;
+  margin: 20px auto;
+  color: #FF3B3F;
+  font-family: "milkshake", cursive;
+  text-shadow: 0 0 7px white, 0 0 25px #D92818; }
+
+.The70 {
+    position: absolute;
+    font-size: 50px;
+    transform: rotate(-20deg);
+    left: -50px;
+  }
+
+.Diner {
+    position: absolute;
+    top: 10px;
+    left: -9px;
+    font-size: 110px;
+  }
+
+.base_bg {
+    position: absolute;
+    top: 41px;
+    left: -44px;
+    width: 334px;
+    height: 100px;
+    border-radius: 20px;
+  }
+
+.base_tp {
+    position: absolute;
+    width: 91px;
+    height: 91px;
+    top: 4px;
+    left: 85px;
+    border-radius: 50%;
+  }
+
+/* ==== NAVIGATION ==== */
+.nav_bar {
+  position: absolute;
+  top: 75px;
+  width: 100%;
+  height: 50px; 
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white; }
+
+.dropbtn {
+    color: white;
+    margin: 0;
+    padding: 0;
+    border: none; 
+    font-size: 3em;
+    font-family: 'Futura', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.dropdown {
+    position: relative;
+    display: inline-block; }
+
+.dropdown-content {
+    display: none;
+    margin-left: -15px;
+    position: absolute;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); }
+
+.dropdown-content a {
+    color: white;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+    display: block; 
+    font-size: 3em;
+  }
+
+.dropdown:hover .dropdown-content { display: block; }
+
+#navigation div:nth-child(5), #navigation div:nth-child(6) {
+    text-align: right; }
+
+.content-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* SAME COLOR */
+footer, .base_bg, .base_tp, .nav_bar, .dropbtn, .dropdown-content {
+  background-color: #4AC0BF; }
+
+/* CONTENT WRAPPER */
+.content-wrapper {
+  width: 80%;
+  margin: 0 auto;}
+
+/* TITLE */
+#title {
+  font-family: 'Milkshake', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #D92A1A;
+  font-size: 9em;
+  text-align: center;
+}
+
+#date {
+  font-size: 5em;
+  text-align: center;
+  font-family: 'OstrichSansReg', sans-serif;
+}
+
+/* BACKGROUND */
+#bg {
+  background-color: #50BFBF;
+  padding: 1rem;
+  text-align: center;
+  width: 75%;
+  margin: 5rem auto;
+  border-radius: 20px;
+}
+
+/* MENU */
+.subheader {
+  font-size: 5em;
+  color: #FFF;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+  border-bottom: 3px solid #D92A1A;
+  box-shadow: 0px 3px #FFF;
+}
+
+.item-price-container {
+  display: flex;
+  font-size: 4.5em;
+  justify-content: space-between;
+  color: #D92A1A;
+  font-family: 'Milkshake', sans-serif;
+}
+
+.item-price-container p {
+  color: #000;
+  font-family: 'Futura', sans-serif;
+}
+
+.menu-items {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.menu-items > p{
+  font-size: 4em;
+  margin-bottom: 2rem;
+}
+
+/* FOOTER */
+#footer {
+  background-color: #50BFBF;
+  color: #000;
+  font-size: 2em;
+}
+
+.bg-bar-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content:flex-start;
+  padding: 1rem;
+  width: 100%;
+}

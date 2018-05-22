@@ -1,0 +1,47 @@
+/* Banner */
+#banner{
+    position:relative;
+    display: flex;
+    top: -40px;
+    height: 300px;
+    z-index: -100;
+    opacity: 0.8;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  #mainImg {
+    display: block;
+    position: relative;
+    min-height: 100vh;
+    min-width: 100vw;
+    margin-top: -50vh;
+    object-fit: cover;
+  }
+
+.hidden {
+  display: none;
+}
+
+#book_btn {
+  width: 150px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  color: white;
+  background-color: #FF3B3F;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer; }
+
+
+/* Footer */
+footer {
+  position:relative;
+  margin-top: 100px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  float: bottom;
+}

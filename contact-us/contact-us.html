@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/5ddfcdc47c.js"></script>
+    <meta charset="utf-8" />
+    <meta name="description" content="Contact Us Page" />
+    <title>Contact Us</title>
+    <link type="text/css" rel="stylesheet" href="contact-us.css" />
+    <script type="text/javascript" src="contact-us.js"></script>
+  </head>
+  <body>
+    <div class="bg"></div>
+    <header id="header">
+      <nav id="navbar">
+        <ul class="drop-down">
+          <li class="drop-1">
+            <a href="#">Contact</a>
+            <ul class="drop-down-content-1">
+              <li><a href="../html/aboutus.html">About Us</a></li>
+              <li><a href="../contact-us/contact-us.html">Contact Us</a></li>
+              <li><a href="../careers/careers.html">Careers</a></li>
+              <li><a href="../html/locations.html">Locations</a></li>
+              <li><a href="../html/events.html">Events/Bookings</a></li>
+            </ul>
+          </li>
+          <li class="drop-2">
+            <a href="#">Food</a>
+            <ul class="drop-down-content-2">
+              <li><a href="../html/menu.html">Menu</a></li>
+              <li><a href="../specials/specials.html">Specials</a></li>
+              <li><a href="../gift-card/giftcard.html">Gift Cards</a></li>
+            </ul>
+          </li>
+          <li><a href="../sitemap/sitemap.html">Site Map</a></li>
+          <li><a href="../yahtzee/yahtzee.html">Contest</a></li>
+        </ul>
+      </nav>
+
+      <div class="title_box">
+        <div class="base_bg"></div>
+        <div class="base_tp"></div>
+        <span class="The70">The 70's</span>
+        <span class="Diner">Diner</span>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="main-heading-wrapper">
+        <h1 id="contact">Contact</h1>
+        <h2 class="sub-heading">Please take a moment to fill out the form below, and holla at us. We'll get back to you within 2-3 business days. Alternatively, you can give us a call during our business hours, or send us an email directly. It'd be groovy to hear from ya! </h2>
+      </section>
+      <div class="contact-container">
+        <section class="main-form-wrapper">
+          <form id="myForm" name="contact-us-form" method="post">
+            <ul>
+              <li class="form-row">
+                <label for="fname">*Name</label>
+                <span class="fname-container">
+                  <input type="text" id="fname" name="fname" />
+                  <label for="fname">First</label>
+                </span>
+                <span class="lname-container">
+                  <input type="text" id="lname" name="lname" />
+                  <label for="lname">Last</label>
+                </span>
+              </li>
+              <li class="form-row">
+                <label for="phone">Your phone number</label>
+                <input type="number" id="phone" name="phone" />
+              </li>
+              <li class="form-row">
+                <label for="email">*Your email</label>
+                <input type="email" id="email" name="email" />
+              </li>
+              <li class="form-row">
+                <label for="comment">*Please leave your comment</label>
+                <textarea type="text" name="comment" id="comment"></textarea>
+              </li>
+            </ul>
+            <div class="icon-button-container">
+              <div class="button-container">
+                <button id="sbt-btn" type="submit" name="btn-submit">Holla!</button>
+                <button id="clear-btn" type="button" name="btn-clear">Restart</button>
+              </div>
+              <p class="sent-mssg"></p>
+              <i class="fa fa-motorcycle hidden" aria-hidden="true"></i>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer id="footer">
+      <div class="bg-bar-container">
+        <div class="copyright">
+          <p>Copyright &copy; The 70's Diner</p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

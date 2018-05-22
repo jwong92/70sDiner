@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Make your own gift card">
+    <title>Gift Cards</title>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <link type="text/css" rel="stylesheet" href="giftcard.css" />
+    <script type="text/javascript" src="giftcard.js"></script>
+    <script src="https://use.fontawesome.com/5ddfcdc47c.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav_bar">
+        <div class="content-wrapper">
+          <div id="navigation" class="nav-flex">
+            <div class="nav-item">
+              <div class="dropdown">
+                <button class="dropbtn">Contact</button>
+                <div class="dropdown-content">
+                  <a href="../html/aboutus.html">About Us</a>
+                  <a href="../contact-us/contact-us.html">Contact Us</a>
+                  <a href="../careers/careers.html">Careers</a>
+                  <a href="../html/locations.html">Locations</a>
+                  <a href="../html/events.html">Events &amp; Bookings</a>
+                </div>
+              </div>
+            </div>
+            <div class="nav-item">
+              <div class="dropdown">
+                <button class="dropbtn">Food</button>
+                <div class="dropdown-content">
+                  <a href="../html/menu.html">Menu</a>
+                  <a href="../specials/specials.html">Specials</a>
+                  <a href="../gift-card/giftcard.html">Gift Cards</a>
+                </div>
+              </div>
+            </div>
+            <div class="nav-item"></div>
+            <div class="nav-item"></div>
+            <div class="nav-item">
+              <a id="sitemap" class="dropbtn" href="../sitemap/sitemap.html">Site Map</a>
+            </div>
+            <div class="nav-item">
+              <a class="dropbtn" href="../yahtzee/yahtzee.html">Game</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="title_box">
+        <div class="base_bg"></div>
+        <div class="base_tp"></div>
+        <span class="The70">The 70's</span>
+        <span class="Diner">Diner</span>
+      </div>
+    </header>
+    <!-- <header id="header">
+      <nav id="navbar">
+        <ul class="drop-down">
+          <li class="drop-1">
+            <a href="#">Contact</a>
+            <ul class="drop-down-content-1">
+              <li><a href="../html/aboutus.html">About Us</a></li>
+              <li><a href="../contact-us/contact-us.html">Contact Us</a></li>
+              <li><a href="../careers/careers.html">Careers</a></li>
+              <li><a href="../html/locations.html">Locations</a></li>
+              <li><a href="../html/events.html">Events/Bookings</a></li>
+            </ul>
+          </li>
+          <li class="drop-2">
+            <a href="#">Food</a>
+            <ul class="drop-down-content-2">
+              <li><a href="../html/menu.html">Menu</a></li>
+              <li><a href="../specials/specials.html">Specials</a></li>
+              <li><a href="../gift-card/giftcard.html">Gift Cards</a></li>
+            </ul>
+          </li>
+          <li><a href="../sitemap/sitemap.html">Site Map</a></li>
+          <li><a href="../yahtzee/yahtzee.html">Contest</a></li>
+        </ul>
+      </nav>
+
+      <div class="title_box">
+        <div class="base_bg"></div>
+        <div class="base_tp"></div>
+        <span class="The70">The 70's</span>
+        <span class="Diner">Diner</span>
+      </div>
+    </header> -->
+
+    <main id="main">
+      <section class="main-title-wrapper">
+        <h1 id="giftcards">Groovy Giftcards</h1>
+        <h2>Whats a better way to show you love someone than the gift of a mouth watering, juicy, burger, some fresh cut fries, and an ice cold milkshake? Create a custom giftcard today, or opt for a generic one, and your family and friends will thank you for it. Trust us. Giftcards must be picked up in store within 24 hours of ordering, but we'll call you when they're ready.</h2>
+      </section>
+
+      <div class="main-design-and-result-container">
+        <aside id="main-design">
+          <h3>Step 1: Choose your background</h3>
+          <ul>
+            <div class="background-color-design-container">
+              <li>
+                <div id="darkblue"></div>
+                <p class="color-text">Light Blue</p>
+              </li>
+              <li>
+                <div id="teal"></div>
+                <p class="color-text">Teal</p>
+              </li>
+              <li>
+                <div id="mustard"></div>
+                <p class="color-text">Yellow</p>
+              </li>
+              <li>
+                <div id="mauve"></div>
+                <p class="color-text">Mauve</p>
+              </li>
+            </div>
+          </ul>
+
+          <h3>Step 2: Choose your font</h3>
+          <ul>
+            <div class="font-design-container">
+              <li>
+                <div id="arial">Aa</div>
+                <p class="font-text">Arial</p>
+              </li>
+              <li>
+                <div id="impact">Aa</div>
+                <p class="font-text">Impact</p>
+              </li>
+              <li>
+                <div id="helv">Aa</div>
+                <p class="font-text">Helvetica</p>
+              </li>
+              <li>
+                <div id="georgia">Aa</div>
+                <p class="font-text">Georgia</p>
+              </li>
+            </div>
+          </ul>
+
+          <h3>Step 3: Choose an image</h3>
+          <ul>
+            <div class="image-design-container">
+              <li><i class="fa fa-car" aria-hidden="true" alt="car icon"></i></li>
+              <li><i class="fa fa-coffee" aria-hidden="true" alt="coffee-icon"></i></li>
+              <li><i class="fa fa-cutlery" aria-hidden="true" alt="cutlery-icon"></i></li>
+              <li><i class="fa fa-heart" aria-hidden="true" alt="heart-icon"></i></li>
+            </div>
+          </ul>
+
+      <div class="form-wrapper">
+        <form id="myForm" name="gc-form" method="post">
+          <h3>Step 4: Enter the recipients name</h3>
+          <div class="message-input-container">
+            <label for="message">To:</label>
+            <input type="text" maxlength="20" id="message" name="message"></input>
+          </div>
+
+          <h3>Step 5: Enter your name</h3>
+          <div class="from-input-container">
+            <label for="in-from">From:</label>
+            <input type="text" maxlength="20" id="in-from" name="in-from" />
+          </div>
+
+          <h3>Step 6: Enter the amount</h3>
+          <div class="amount-num-container">
+            <label for="dollar">Amount:</label>
+            <div class="symbol-input">
+            <p>$</p>
+              <input type="number" maxlength="3" id="dollar" name="dollars" />
+            </div>
+          </div>
+
+          <h3>Step 7: How can we reach you?</h3>
+          <div class="telephone-num-container">
+            <label for="telephone">Telephone: </label>
+            <input id="telephone" name="telephone" type="tel" maxlength="10" />
+          </div>
+
+          <button id="sbt-btn" type="submit" name="sbt-btn">I dig it!</button>
+          <button id="clear-btn" type="button" name="clean-btn">Restart</button>
+        </form>
+      </div>
+
+          <p></p>
+
+        </aside>
+
+        <aside id="main-result">
+          <h2>Sneak Peak</h2>
+          <div class="preview">
+            <h3>The 70's Diner</h3>
+            <h4>Hey <span id="name">________</span>, someone cares about your hunger</h4>
+            <div class="price-icon-preview-container">
+              <div class="icon-preview-container">
+                <span></span>
+              </div>
+              <div class="price-preview-container">
+                <span></span>
+              </div>
+            </div>
+            <div class="from-expiry-container">
+              <p>Expires on: <span id="date"></span></p>
+              <p>From only the best, <span id="from">___________</span></p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer id="footer">
+      <div class="bg-bar-container">
+        <div class="copyright">
+          <p>Copyright &copy; The 70's Diner</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+</html>

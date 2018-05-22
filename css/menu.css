@@ -1,0 +1,54 @@
+/* FORM STYLING */
+.flex-container {
+  display: flex;
+  flex-wrap:wrap;}
+
+aside, .flex-item {flex: 1 0 0;}
+
+main {flex: 2 0 0;}
+
+table {
+  border-top: solid 3px #D92818;
+  width: 100%;}
+
+section {
+  padding-right: 20px;
+  min-width: 200px;}
+
+td:nth-child(2) {
+  text-align: right;}
+
+#sub_btn {
+  width: 150px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  color: white;
+  background-color: #FF3B3F;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer; }
+
+
+/* Review & Confirmation */
+.hidden {display: none;}
+
+#place_holder {
+  height: 100%;
+  width: 100%;
+  opacity: 0.9;
+  z-index: -200;
+  background-position: center;
+  background-size:cover;
+  /* royalty free image from: https://pixabay.com/en/burger-sandwich-food-fast-food-1553287/ */
+  background-image: url("../images/food1.jpg");}
+
+/* Footer */
+footer {
+  position: relative;
+  margin-top: 50px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  float:bottom;}

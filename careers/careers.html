@@ -1,0 +1,389 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+<head>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <meta charset="utf-8" />
+  <meta name="description" content="Careers Page" />
+  <title>Careers</title>
+  <link rel="stylesheet" type="text/css" href="careers.css" />
+  <script type="text/javascript" src="careers.js"></script>
+</head>
+
+<body>
+    <header>
+      <nav class="nav_bar">
+        <div class="content-wrapper">
+          <div id="navigation" class="nav-flex">
+            <div class="nav-item">
+              <div class="dropdown">
+                <button class="dropbtn">Contact</button>
+                <div class="dropdown-content">
+                  <a href="../html/aboutus.html">About Us</a>
+                  <a href="../contact-us/contact-us.html">Contact Us</a>
+                  <a href="../careers/careers.html">Careers</a>
+                  <a href="../html/locations.html">Locations</a>
+                  <a href="../html/events.html">Events &amp; Bookings</a>
+                </div>
+              </div>
+            </div>
+            <div class="nav-item">
+              <div class="dropdown">
+                <button class="dropbtn">Food</button>
+                <div class="dropdown-content">
+                  <a href="../html/menu.html">Menu</a>
+                  <a href="../specials/specials.html">Specials</a>
+                  <a href="../gift-card/giftcard.html">Gift Cards</a>
+                </div>
+              </div>
+            </div>
+            <div class="nav-item"></div>
+            <div class="nav-item"></div>
+            <div class="nav-item">
+              <a id="sitemap" class="dropbtn" href="../sitemap/sitemap.html">Site Map</a>
+            </div>
+            <div class="nav-item">
+              <a class="dropbtn" href="../yahtzee/yahtzee.html">Game</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="title_box">
+        <div class="base_bg"></div>
+        <div class="base_tp"></div>
+        <span class="The70">The 70's</span>
+        <span class="Diner">Diner</span>
+      </div>
+    </header>
+
+
+  <main id="main">
+    <div id="title-blurb-container">
+      <h1>Careers</h1>
+      <h2>Welcome to our careers page. The 70's Diner is an ever growing and expanding family, and we are always looking for people to become a part of it. Take a look at some of our postings below. If you don't see something you like, but feel you'd be a great fit, feel free to send us your resume anyways at: the70sdiner@gmail.com, with the subject line: Job Inquiry. We look forward to hearing from you!</h2>
+      <h3>Job Categories</h3>
+      <div class="job-types-container">
+        <a href="#droom"><div class="job-type">Dining Room</div></a>
+        <a href="#kitchen"><div class="job-type">Kitchen</div></a>
+        <a href="#business"><div class="job-type">Business</div></a>
+        <a href="#bar"><div class="job-type">Bar</div></a>
+      </div>
+    </div>
+    <div class="job-postings-image-container">
+      <aside class="job-positings">
+        <h2 class="category-title" id="droom">Dining Room</h2>
+          <ul>
+            <li><a href="#" class="job-1">Server - Mornings</a></li>
+            <li><a href="#" class="job-2">Server - Closing</a></li>
+            <li><a href="#" class="job-3">Host/Hostess</a></li>
+          </ul>
+        <h2 class="category-title" id="kitchen">Kitchen</h2>
+          <ul>
+            <li><a href="#" class="job-4">Head Griller - Weekends</a></li>
+            <li><a href="#" class="job-5">Prepper</a></li>
+            <li><a href="#" class="job-6">Bus Boy/Girl</a></li>
+            <li><a href="#" class="job-7">Griller</a></li>
+          </ul>
+        <h2 class="category-title" id="business">Business</h2>
+          <ul>
+            <li><a href="#" class="job-8">Payroll Accountant</a></li>
+            <li><a href="#" class="job-9">Marketing Associate</a></li>
+          </ul>
+        <h2 class="category-title" id="bar">Bar</h2>
+          <ul>
+            <li><a href="#" class="job-10">Bartender - Evenings</a></li>
+          </ul>
+      </aside>
+
+      <aside class="photos">
+        <div class="img-container">
+          <img src="../photos/career-img.png" alt="girl in front of a diner in retro clothing" />
+        </div>
+      </aside>
+    </div>
+
+      <div class="pop-up hidden">
+        <span id="close">X</span>
+        <aside class="job-descriptions">
+          <h2 class="category-title">Job Description</h2>
+          <div class="job-title-container">
+            <h3>Job Title: <span id="job-title">Title</span></h3>
+            <h3>Job ID: <span id="job-id">ID</span></h3>
+            <h3>Job Manager: <span id="job-manager">Manager</span></h3>
+          </div>
+          <div class="job-description-container">
+            <h3>Description:</h3>
+            <p id="job-description"></p>
+          </div>
+          <div class="form-wrapper">
+            <form action="#" name="application-form" method="post" enctype="multipart/form-data">
+              <ul>
+                <li class="input-row">
+                  <label for="app-resume">Resume</label>
+                  <input type="file" id="app-resume" name="resume" />
+                </li>
+                <li class="input-row">
+                  <label for="app-name">*Full Name</label>
+                  <input type="text" id="app-name" name="fname" />
+                </li>
+                <li class="input-row">
+                  <label for="app-pnum">*Phone Number</label>
+                  <input type="number" id="app-pnum" name="pnum" />
+                </li>
+                <li class="input-row">
+                  <label for="app-email">*Email</label>
+                  <input type="email" id="app-email" name="email" />
+                </li>
+                <li class="input-row">
+                  <label for="app-info">Additional Information</label>
+                  <textarea type="text" id="app-info" name="info"></textarea>
+                </li>
+              </ul>
+              <div class="btn-mssg-container">
+                <button type="submit" name="sbt-btn" id="sbt-btn">apply</button>
+                <p id="sbt-mssg"></p>
+              </div>
+            </form>
+          </div>
+        </aside>
+      </div>
+
+    <aside class="hidden">
+      <section id="server-morn" class="job-description-details hidden">
+        <p class="job-1-1">Server - Mornings</p>
+        <p class="job-1-2">12345</p>
+        <p class="job-1-3">Jessica Wong</p>
+        <section class="job-1-4">
+          <h2>Summary</h2>
+          <p>Servers provide good customer service, take orders, and deliver food from the kitchen. They are expected to answer questions regarding the menu, and provide any assistance to customers as necessary. They work closely with other wait staff and the kitchen to ensure the restaurant is operated efficiently.</p>
+
+          <h2>Experience</h2>
+          <ul>
+            <li>2+ years of serving experience or equivalent</li>
+            <li>Excellent customer service</li>
+            <li>Excellent communication</li>
+            <li>Must have their smart serve certificate</li>
+            <li>Able to work on their feet for 3+ hours</li>
+          </ul>
+
+          <h2>Hours</h2>
+          <p>Hours vary, but employees are expected to work at least 25 hours a week during these times</p>
+          <p>Mon-Sun: 12PM-5PM</p>
+        </section>
+      </section>
+      <section id="server-close" class="job-description-details hidden">
+        <p class="job-2-1">Server - Closing</p>
+        <p class="job-2-2">22345</p>
+        <p class="job-2-3">Jessica Wong</p>
+        <section class="job-2-4">
+          <h2>Summary</h2>
+          <p>Servers provide good customer service, take orders, and deliver food from the kitchen. They are expected to answer questions regarding the menu, and provide any assistance to customers as necessary. They work closely with other wait staff and the kitchen to ensure the restaurant is operated efficiently.</p>
+
+          <h2>Experience</h2>
+          <ul>
+            <li>2+ years of serving experience or equivalent</li>
+            <li>Excellent customer service</li>
+            <li>Excellent communication</li>
+            <li>Must have their smart serve certificate</li>
+            <li>Able to work on their feet for 3+ hours</li>
+          </ul>
+
+          <h2>Hours</h2>
+          <p>Hours vary, but employees are expected to work at least 25 hours a week during any of these times</p>
+          <p>Mon-Fri: 5PM-1AM</p>
+          <p>Sat-Sun: 5PM-4AM</p>
+        </section>
+      </section>
+      <section id="host" class="job-description-details hidden">
+        <p class="job-3-1">Host/Hostess</p>
+        <p class="job-3-2">32345</p>
+        <p class="job-3-3">Jessica Wong</p>
+        <section class="job-3-4">
+          <h2>Summary</h2>
+          <p>Hosts/Hostesses are the face of the diner, and the first ones customers interact with. They must provide excellent customer service, greet customers, and seat customers in the appropriate section. They are expected to answer customer questions both in person and over the phone. They are also expected to log reservations, and work out any conflicts as necessary. They work closely with other wait staff</p>
+
+          <h2>Experience</h2>
+          <ul>
+            <li>2+ years of host experience or equivalent</li>
+            <li>Excellent customer service</li>
+            <li>Excellent communication</li>
+            <li>Very organized</li>
+            <li>Must have their smart serve certificate</li>
+            <li>Able to work on their feet for 3+ hours</li>
+          </ul>
+
+          <h2>Hours</h2>
+          <p>Hours vary, but employees are expected to work at least 25 hours a week during any of these times</p>
+          <p>Mon-Sun: 12PM-5PM</p>
+        </section>
+      </section>
+      <section id="head-grill" class="job-description-details hidden">
+        <p class="job-4-1">Head Griller-Weekends</p>
+        <p class="job-4-2">42345</p>
+        <p class="job-4-3">Bradley Campbell</p>
+        <section class="job-4-4">
+          <h2>Summary</h2>
+          <p>Head grillers are responsible for deligating tasks as necessary to other kitchen staff, while also ensuring that kitchen orders are being filled. He/She will be in charge of maintaining peace within the kitchen, and resolving conflicts as necesary.</p>
+
+          <h2>Experience</h2>
+          <ul>
+            <li>2+ years of kitchen experience or equivalent</li>
+            <li>University Degree/College diploma in food science or culinary arts preferred but not necessary</li>
+            <li>Excellent communication</li>
+            <li>Very organized</li>
+            <li>Ability to manage and subdue conflicts as they arise</li>
+            <li>Able to work on their feet for 4+ hours</li>
+          </ul>
+
+          <h2>Hours</h2>
+          <p>Hours vary, but employees are expected to work at least 25 hours a week during any of these times</p>
+          <p>Fri-Sun: 12PM-4AM</p>
+        </section>
+      </section>
+      <section id="prep" class="job-description-details hidden">
+        <p class="job-5-1">Prepper</p>
+        <p class="job-5-2">52345</p>
+        <p class="job-5-3">Bradley Campbell</p>
+        <section class="job-5-4">
+          <h2>Summary</h2>
+          <p>Preppers are responsible for aiding kitchen staff in preparing food for quick cooking. This includes but is not limited to, cutting fries, making patties, chopping vegetables, etc...</p>
+
+          <h2>Experience</h2>
+          <ul>
+            <li>2+ years of kitchen experience or equivalent</li>
+            <li>Excellent communication</li>
+            <li>Very organized</li>
+            <li>Able to work on their feet for 4+ hours</li>
+          </ul>
+
+          <h2>Hours</h2>
+          <p>Hours vary, but employees are expected to work at least 25 hours a week during any of these times</p>
+          <p>Mon-Sun: 12PM-4AM</p>
+        </section>
+      </section>
+      <section id="busser" class="job-description-details hidden">
+        <p class="job-6-1">Bus Boy/Girl</p>
+        <p class="job-6-2">62345</p>
+        <p class="job-6-3">Bradley Campbell</p>
+        <section class="job-6-4">
+          <h2>Summary</h2>
+          <p>Bus Boy/Girl is responsible for collecting dishes around the restaurant, loading the dishwasher, and running it as needed. If there aren't any dishes to be collected, they are to ask head griller for work as necessary</p>
+
+          <h2>Experience</h2>
+          <ul>
+            <li>Previous experience bussing tables preferred but not necessary</li>
+            <li>Self-motivated</li>
+            <li>Excellent communication</li>
+            <li>Very organized</li>
+            <li>Able to work on their feet for 4+ hours</li>
+          </ul>
+
+          <h2>Hours</h2>
+          <p>Hours vary, but employees are expected to work at least 25 hours a week during any of these times</p>
+          <p>Mon-Sun: 12PM-4AM</p>
+        </section>
+      </section>
+      <section id="griller" class="job-description-details hidden">
+        <p class="job-7-1">Griller</p>
+        <p class="job-7-2">72345</p>
+        <p class="job-7-3">Bradley Campbell</p>
+        <section class="job-7-4">
+          <h2>Summary</h2>
+          <p>The griller will be responsible for executing customer orders as they come in. They are to report to the head griller.</p>
+
+          <h2>Experience</h2>
+          <ul>
+            <li>2+ years of kitchen experience or equivalent</li>
+            <li>Excellent communication</li>
+            <li>Very organized</li>
+            <li>Able to work on their feet for 4+ hours</li>
+          </ul>
+
+          <h2>Hours</h2>
+          <p>Hours vary, but employees are expected to work at least 25 hours a week during any of these times</p>
+          <p>Mon-Sun: 12PM-4AM</p>
+        </section>
+      </section>
+      <section id="payroll" class="job-description-details hidden">
+        <p class="job-8-1">Payroll Accountant</p>
+        <p class="job-8-2">82345</p>
+        <p class="job-8-3">Sophia Vong</p>
+        <section class="job-8-4">
+          <h2>Summary</h2>
+          <p>The payroll accountant is responsible for keeping track of all employee payments. They are to ensure each employee is paid on time, and the correct amount. They are to track payments properly, and will create monthly reports as necessary.</p>
+
+          <h2>Experience</h2>
+          <ul>
+            <li>University degree or College diploma in Accounting, Business, or related field required.</li>
+            <li>Excellent communication</li>
+            <li>Excellent organizational skills</li>
+            <li>Excellent time management skills</li>
+            <li>Highly self motivated, and responsible for their actions</li>
+          </ul>
+
+          <h2>Hours</h2>
+          <p>Mon-Fri: 12PM-8PM</p>
+        </section>
+      </section>
+      <section id="marketing" class="job-description-details hidden">
+        <p class="job-9-1">Marketing Associate</p>
+        <p class="job-9-2">92345</p>
+        <p class="job-9-3">Sophia Vong</p>
+        <section class="job-9-4">
+          <h2>Summary</h2>
+          <p>The marketing associate will be responsible for promoting the diner both on social media, and any other promotional activities that may arise. They will help to promote the success of the diner, and aim to generate more business for the diner.</p>
+
+          <h2>Experience</h2>
+          <ul>
+            <li>University degree or College diploma in Marketing, Advertising, Business, or related field required.</li>
+            <li>Excellent communication</li>
+            <li>Excellent organizational skills</li>
+            <li>Excellent time management skills</li>
+            <li>Highly self motivated, and responsible for their actions</li>
+          </ul>
+
+          <h2>Hours</h2>
+          <p>Mon-Fri: 12PM-8PM</p>
+        </section>
+      </section>
+      <section id="bartender" class="job-description-details hidden">
+        <p class="job-10-1">Bartender - Evenings</p>
+        <p class="job-10-2">13345</p>
+        <p class="job-10-3">Jessica Wong</p>
+        <section class="job-10-4">
+          <h2>Summary</h2>
+          <p>The bartender is reponsible for fulfilling customer drink orders, and ensuring they are done properly. They must be knowleadgeable in all drink orders, or be willing to learn.</p>
+
+          <h2>Experience</h2>
+          <ul>
+            <li>2+ years previous bartending experience, or equivalent</li>
+            <li>Excellent organizational skills</li>
+            <li>Excellent time management skills</li>
+            <li>Must have their smart serve certificate</li>
+          </ul>
+
+          <h2>Hours</h2>
+          <p>Mon-Sun: 12PM-4AM</p>
+        </section>
+      </section>
+    </aside>
+
+  </main>
+
+  <footer id="footer">
+    <div class="bg-bar-container">
+      <div class="copyright">
+        <p>Copyright &copy; The 70's Diner</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+
+</html>
+
+<!-- https://stackoverflow.com/questions/15519223/how-can-i-customize-the-browse-button  - for the browse file button-->

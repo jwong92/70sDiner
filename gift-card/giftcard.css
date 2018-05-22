@@ -1,0 +1,563 @@
+/*FONTS*/
+@font-face {
+  font-family: "Milkshake";
+  src: url("../Fonts/Milkshake.otf") format("opentype");
+  src: url("../Fonts/Milkshake.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'OstrichSans';
+    src: url('../compatible/ostrich-regular-webfont.woff2') format('woff2'),
+         url('../compatible/ostrich-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('../compatible/futura_medium_condensed_bt-webfont.woff2') format('woff2'),
+         url('../compatible/futura_medium_condensed_bt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('../compatible/futura_bold_font-webfont.woff2') format('woff2'),
+         url('../compatible/futura_bold_font-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*DEFAULT*/
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+header, body, footer, main, section, aside, h1, h2, h3, h4, p, nav, form, button, li, ul {
+  margin: 0px;
+  padding: 0px;
+  font-weight:inherit;
+}
+
+body {
+  font-size: 12px;
+  font-family: 'Futura', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: black;
+  background-color: #EFEFEF;
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #D92818;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*USE EVERYWHERE*/
+#main {
+  margin: 5rem;
+}
+
+[class$="design-container"] {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+#main-design h3 {
+  font-size: 3em;
+  padding-top: 2rem;
+  font-family: "OstrichSans", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+#main-design p, label {
+  font-size: 2.5em;
+}
+
+
+[class$="num-container"], [class$="input-container"] {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.symbol-input {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+[class$="num-container"] label {
+  margin-right: 1rem;
+}
+
+[class$="input-container"] input {
+  height: 40px;
+  width: 400px;
+  /* margin-left: 1rem; */
+  border: none;
+  box-shadow: inset -1px -1px 2px;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-family: 'OstrichSans', sans-serif;
+  font-size: 2.5em;
+}
+
+[class$="num-container"] input {
+  height: 40px;
+  width: 150px;
+  border: none;
+  box-shadow: inset -1px -1px 2px;
+  border-radius: 5px;
+  font-family: 'OstrichSans', sans-serif;
+  font-size: 2.5em;
+}
+
+/* LOGO AND NAV */
+.nav-flex {
+  display:flex;
+  flex-wrap:nowrap;
+  margin-top: 4px; }
+
+.nav-item { flex: 1 0 0;}
+
+/* ==== HEADER ==== */
+.title_box {
+  position: relative;
+  height: 95px;
+  width: 225px;
+  margin: 20px auto;
+  color: #FF3B3F;
+  font-family: "milkshake", cursive;
+  text-shadow: 0 0 7px white, 0 0 25px #D92818; }
+
+.The70 {
+    position: absolute;
+    font-size: 50px;
+    transform: rotate(-20deg);
+    left: -50px;
+  }
+
+.Diner {
+    position: absolute;
+    top: 10px;
+    left: -9px;
+    font-size: 110px;
+  }
+
+.base_bg {
+    position: absolute;
+    top: 41px;
+    left: -44px;
+    width: 334px;
+    height: 100px;
+    border-radius: 20px;
+  }
+
+.base_tp {
+    position: absolute;
+    width: 91px;
+    height: 91px;
+    top: 4px;
+    left: 85px;
+    border-radius: 50%;
+  }
+
+/* ==== NAVIGATION ==== */
+.nav_bar {
+  position: absolute;
+  top: 75px;
+  width: 100%;
+  height: 50px; 
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white; }
+
+.dropbtn {
+    color: white;
+    margin: 0;
+    padding: 0;
+    border: none; 
+    font-size: 3em;
+    font-family: 'Futura', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.dropdown {
+    position: relative;
+    display: inline-block; }
+
+.dropdown-content {
+    display: none;
+    margin-left: -15px;
+    position: absolute;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); }
+
+.dropdown-content a {
+    color: white;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+    display: block; 
+    font-size: 3em;
+  }
+
+.dropdown:hover .dropdown-content { display: block; }
+
+#navigation div:nth-child(5), #navigation div:nth-child(6) {
+    text-align: right; }
+
+.content-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* SAME COLOR */
+footer, .base_bg, .base_tp, .nav_bar, .dropbtn, .dropdown-content {
+  background-color: #4AC0BF; }
+
+/* CONTENT WRAPPER */
+.content-wrapper {
+  width: 80%;
+  margin: 0 auto;}
+
+/*MAIN*/
+.main-design-and-result-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/*MAIN TITLE*/
+.main-title-wrapper{
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1265px;
+  padding: 2rem;
+}
+
+.main-title-wrapper h2{
+  font-size: 3em;
+}
+
+#giftcards {
+  font-size: 9em;
+  font-family: "Milkshake", sans-serif;
+  color: rgb(217, 42, 26);
+  font-weight: bold;
+}
+
+/*GC BACKGROUND COLORS*/
+.background-color-design-container div {
+  width: 10em;
+  height: 10em;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 1rem;
+}
+
+#darkblue {
+  background-color: rgb(80, 191, 191);
+}
+
+#teal {
+  background-color: rgb(3, 166, 150);
+}
+
+#mustard {
+  background-color: rgb(219, 202, 105);
+}
+
+#mauve {
+  background-color: rgb(168, 195, 255);
+}
+
+.color-text {
+  text-align: center;
+  margin: 1rem;
+}
+
+/*GC FONT*/
+.font-design-container div{
+  width: 5em;
+  height: 5em;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+  background-color: #FFF;
+}
+
+.font-design-container > li {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.font-text {
+  text-align: center;
+}
+
+#arial {
+  font-family: Arial, sans-serif;
+  font-size: 2em;
+}
+
+#impact {
+  font-family: 'Impact', sans-serif;
+  font-size: 2em;
+}
+
+#helv {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 2em;
+}
+
+#georgia {
+  font-family: Georgia, sans-serif;
+  font-size: 2em;
+}
+
+/*GC ICONS*/
+.image-design-container > li {
+  border:1px solid black;
+  margin: 1rem;
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+}
+
+.image-design-container i {
+  font-size: 3em;
+}
+
+/*GC RECIPIENT NAME*/
+.message-input-container {
+  display: flex;
+  align-items: center;
+}
+
+/*GC AMOUNT*/
+.amount-num-container {
+  display: flex;
+  align-items: center;
+}
+
+.amount-num-container p:nth-child(4) {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  align-self: flex-end;
+}
+
+/* FORM */
+.form-wrapper {
+  max-width: 528px;
+}
+
+/*SUBMIT/CLEAR BTN*/
+[id$="btn"] {
+  margin-top: 1rem;
+  width: 100px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  color: #FFF;
+  font-family: 'OstrichSans', sans-serif;
+  font-weight: normal;
+  font-style: normal;  font-size: 3em;
+  background-color: #4AC0Bf;
+}
+
+[id$="btn"]:hover {
+  background-color: #42ABAA;
+}
+
+/*SUBMIT MESSAGE*/
+#main-design > p:last-of-type {
+  margin-top: 1rem;
+  font-size: 3em;
+}
+
+/*GIFT CARD PREVIEW*/
+#main-result h2 {
+  font-size: 3em;
+  text-align: center;
+}
+
+.preview {
+  width: 50em;
+  height: 30em;
+  background-color: #50BFBF;
+  border: 0.5px solid #000;
+  padding: 1rem;
+  border-radius: 5%/9%;
+}
+
+.preview h3 {
+  color: #D92A1A;
+  font-size: 4em;
+  font-family: 'Milkshake', sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+.preview h4 {
+  font-size: 2.2em;
+  text-align: center;
+  font-family: 'Impact', sans-serif;
+}
+
+.price-icon-preview-container {
+  margin-top:1rem;
+  margin-bottom:1rem;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.icon-preview-container span {
+  font-size: 11em;
+}
+
+.price-preview-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  font-size: 5em;
+}
+
+.from-expiry-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5em;
+  font-family: 'Impact', sans-serif;
+}
+
+/* FOOTER */
+#footer {
+  background-color: #50BFBF;
+  color: #000;
+  font-size: 2em;
+}
+
+.bg-bar-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content:flex-start;
+  padding: 1rem;
+  width: 100%;
+}
+
+/* MEDIA QUERIES */
+
+@media all and (max-width: 1159px) {
+  .main-design-and-result-container {
+    flex-direction: column-reverse;
+  }
+}
+
+@media all and (max-width: 730px) {
+  #giftcards {
+    font-size: 7em;
+  }
+  .main-title-wrapper h2 {
+    font-size: 2.5em;
+  }
+}
+
+@media all and (max-width: 570px) {
+  .background-color-design-container div, .image-design-container > li {
+    width: 5em;
+    height: 5em;
+  }
+  .font-design-container div {
+    width: 2.5em;
+    height: 2.5em;
+  }
+  .preview {
+    width: 100%;
+  }
+  .form-wrapper {
+    width: 450px;
+  }
+  form {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 480px) {
+  [class$="num-container"], [class$="input-container"] {
+    flex-flow: column nowrap;
+    align-items:flex-start;
+  }
+}
+
+@media all and (max-width: 470px) {
+
+}
+
+/*COLORS
+
+Dark Blue
+hex: #024059
+rgb(2, 64, 89)
+
+Light Blue
+hex: 50BFBF
+rgb(80, 191, 191)
+
+Teal
+hex: 03A696
+rgb(3, 166, 150)
+
+Orange
+hex: F2421B
+rgb(242, 66, 27)
+
+Dark Red
+hex: D92A1A
+rgb(217, 42, 26)
+
+mustard
+hex: DBCA69
+
+lighter dark Blue
+hex: 0475A3
+rgb: rgb(4, 117, 163)
+
+Mauve
+hex: A8C3FF
+rgb: rgb(168, 195, 255)
+
+*/

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/5ddfcdc47c.js"></script>
+    <meta charset="utf-8" />
+    <title>Flexbox example</title>
+    <link rel="stylesheet" type="text/css" href="yahtzee.css" />
+	<script src="yahtzee.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <nav id="navbar">
+        <ul class="drop-down">
+          <li class="drop-1">
+            <a href="#">Contact</a>
+            <ul class="drop-down-content-1">
+              <li><a href="../html/aboutus.html">About Us</a></li>
+              <li><a href="../contact-us/contact-us.html">Contact Us</a></li>
+              <li><a href="../careers/careers.html">Careers</a></li>
+              <li><a href="../html/locations.html">Locations</a></li>
+              <li><a href="../html/events.html">Events/Bookings</a></li>
+            </ul>
+          </li>
+          <li class="drop-2">
+            <a href="#">Food</a>
+            <ul class="drop-down-content-2">
+              <li><a href="../html/menu.html">Menu</a></li>
+              <li><a href="../specials/specials.html">Specials</a></li>
+              <li><a href="../gift-card/giftcard.html">Gift Cards</a></li>
+            </ul>
+          </li>
+          <li><a href="../sitemap/sitemap.html">Site Map</a></li>
+          <li><a href="#">Contest</a></li>
+        </ul>
+      </nav>
+
+	  <div class="title_box">
+        <div class="base_bg"></div>
+        <div class="base_tp"></div>
+        <span class="The70">The 70's</span>
+        <span class="Diner">Diner</span>
+      </div>
+    </header>
+	<main>
+	<img id="dice1" src="img/dice1.png"/>
+	<img id="dice2" src="img/dice2.png"/>
+	<img id="dice3" src="img/dice3.png"/>
+	<img id="dice4" src="img/dice4.png"/>
+	<img id="dice5" src="img/dice5.png"/>
+	<div id="gameRules">Score over 300 and win a free meal!</div>
+		<div class="flex-container">
+		  <div id="roll1div">
+				<p>Dice 1</p>
+				<div id="firstDice"></div>
+				<p id="dice1Status"></p>
+			</div>
+			<div id="roll2div">
+				<p>Dice 2</p>
+				<p id="secondDice"></p>
+				<p id="dice2Status"></p>
+			</div>
+			<div id="roll3div">
+				<p>Dice 3</p>
+				<p id="thirdDice"></p>
+				<p id="dice3Status"></p>
+			</div>
+			<div id="roll4div">
+				<p>Dice 4</p>
+				<p id="fourthDice"></p>
+				<p id="dice4Status"></p>
+			</div>
+			<div id="roll5div">
+				<p>Dice 5</p>
+				<p id="fifthDice"></p>
+				<p id="dice5Status"></p>
+			</div>
+			<div id="rollAgain">
+				<h1>Roll Dice!</h1>
+				<div id="displayRolls"></div>
+			</div>
+			<div id="pickupDice">
+				<h1>Pickup Dice!</h1>
+			</div>
+		</div>
+		<div class="flex-container" id="scoreCardWidth">
+			<div>
+				<table id="upperSection">
+					<tr>
+						<th>Upper Section</th>
+						<th class="howToScore">How to Score</th>
+						<th>Your Game</th>
+					</tr>
+					<tr>
+						<td>Ones</td>
+						<td>Count and add only the ones</td>
+						<td id="scoreOfOnes"></td>
+						<td class="scoreButton" id="scoreOneButton">Score</td>
+						<td class="scratchButton" id="scratchOneButton">Scratch</td>
+					</tr>
+					<tr>
+						<td>Twos</td>
+						<td>Count and add only the twos</td>
+						<td id="scoreOfTwos"></td>
+						<td class="scoreButton" id="scoreTwoButton">Score</td>
+						<td class="scratchButton" id="scratchTwoButton">Scratch</td>
+					</tr>
+					<tr>
+						<td>Threes</td>
+						<td>Count and add only the threes</td>
+						<td id="scoreOfThrees"></td>
+						<td class="scoreButton" id="scoreThreeButton">Score</td>
+						<td class="scratchButton" id="scratchThreeButton">Scratch</td>
+					</tr>
+					<tr>
+						<td>Four</td>
+						<td>Count and add only the fours</td>
+						<td id="scoreOfFours"></td>
+						<td class="scoreButton" id="scoreFourButton">Score</td>
+						<td class="scratchButton" id="scratchFourButton">Scratch</td>
+					</tr>
+					<tr>
+						<td>Fives</td>
+						<td>Count and add only the fives</td>
+						<td id="scoreOfFives"></td>
+						<td class="scoreButton" id="scoreFiveButton">Score</td>
+						<td class="scratchButton" id="scratchFiveButton">Scratch</td>
+					</tr>
+					<tr>
+						<td>Sixes</td>
+						<td>Count and add only the sixes</td>
+						<td id="scoreOfSixes"></td>
+						<td class="scoreButton" id="scoreSixButton">Score</td>
+						<td class="scratchButton" id="scratchSixButton">Scratch</td>
+					</tr>
+					<tr>
+						<td>Total</td>
+						<td>=========></td>
+						<td id="upperSectionScore"></td>
+					</tr>
+					<tr>
+						<td>Bonus</td>
+						<td>If the total score above is 63 or over</td>
+						<td id="bonusScore"></td>
+					</tr>
+					<tr>
+						<td>Total</td>
+						<td>=========></td>
+						<td id="upperTotalScore"></td>
+					</tr>
+				</table>
+			</div>
+			<div>
+				<table id="lowerSection">
+					<tr>
+						<th>Lower Section</th>
+						<th>How to Score</th>
+						<th>Your Game</th>
+					</tr>
+					<tr>
+						<td>3 of a kind</td>
+						<td>Add total of all dice</td>
+						<td id="scoreOf3OfAKind"></td>
+						<td class="scoreButton" id="score3OfAKindButton">Score</td>
+						<td class="scratchButton" id="scratch3OfAKindButton">Scratch</td>
+					</tr>
+					<tr>
+						<td>4 of a kind</td>
+						<td>Add total of all dice</td>
+						<td id="scoreOf4OfAKind"></td>
+						<td class="scoreButton" id="score4OfAKindButton">Score</td>
+						<td class="scratchButton" id="scratch4OfAKindButton">Scratch</td>
+					</tr>
+					<tr>
+						<td>Full House</td>
+						<td>25 Points</td>
+						<td id="scoreOfFullHouse"></td>
+						<td class="scoreButton" id="scoreFullHouseButton">Score</td>
+						<td class="scratchButton" id="scratchFullHouseButton">Scratch</td>
+					</tr>
+					<tr>
+						<td>Small Straight</td>
+						<td>30 Points</td>
+						<td id="scoreOfSmallStraight"></td>
+						<td class="scoreButton" id="scoreSmallStraightButton">Score</td>
+						<td class="scratchButton" id="scratchSmallStraightButton">Scratch</td>
+					</tr>
+					<tr>
+						<td>Large Straight</td>
+						<td>40 Points</td>
+						<td id="scoreOfLargeStraight"></td>
+						<td class="scoreButton" id="scoreLargeStraightButton">Score</td>
+						<td class="scratchButton" id="scratchLargeStraightButton">Scratch</td>
+					</tr>
+					<tr>
+						<td>Yahtzee</td>
+						<td>50 Points</td>
+						<td id="scoreOfYahtzee"></td>
+						<td class="scoreButton" id="scoreYahtzeeButton">Score</td>
+						<td class="scratchButton" id="scratchYahtzeeButton">Scratch</td>
+					</tr>
+					<tr>
+						<td>Chance</td>
+						<td>Add total of all dice</td>
+						<td id="scoreOfChance"></td>
+						<td class="scoreButton" id="scoreChanceButton">Score</td>
+						<td class="scratchButton" id="scratchChanceButton">Scratch</td>
+					</tr>
+					<tr>
+						<td>Total of Lower Section</td>
+						<td>=========></td>
+						<td id="finalLowerTotal"></td>
+					</tr>
+					<tr>
+						<td>Total of Upper Section</td>
+						<td>=========></td>
+						<td id="finalUpperTotal"></td>
+					</tr>
+					<tr>
+						<td>GRAND TOTAL</td>
+						<td>=========></td>
+						<td id="finalGrandTotal"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</main>
+    <footer id="footer">
+		<div class="bg-bar-container">
+			<div class="copyright">
+				<p>Copyright &copy; The 70's Diner</p>
+			</div>
+		</div>
+    </footer>
+  </body>
+</html>
