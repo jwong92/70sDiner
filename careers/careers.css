@@ -1,42 +1,37 @@
 /*FONTS*/
 @font-face {
   font-family: "Milkshake";
-  src: url('../compatible/milkshake-webfont.woff2') format('woff2'),
-       url('../compatible/milkshake-webfont.woff') format('woff');
+  src: url("../fonts/Milkshake.otf") format("opentype");
+  src: url("../fonts/Milkshake.ttf") format("truetype");
   font-style: normal;
+}
+
+@font-face {
+  font-family: "OstrichSansReg";
+  src: url("../fonts/ostrich-regular.ttf") format("truetype");
   font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'OstrichSansReg';
-    src: url('../compatible/ostrich-regular-webfont.woff2') format('woff2'),
-         url('../compatible/ostrich-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "OstrichSans";
+  src: url("../fonts/OstrichSans-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'futura_bdcn_btbold';
-    src: url('../compatible/futura_bold_font-webfont.woff2') format('woff2'),
-         url('../compatible/futura_bold_font-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "futura_mdcn_btmedium";
+  src: url("../fonts/futura-med-cond.ttf") format("truetype");
+  font-weight:normal;
+  font-style:normal;
 }
 
 @font-face {
-    font-family: 'futura_lt_btlight';
-    src: url('../compatible/futura_light_bt-webfont.woff2') format('woff2'),
-         url('../compatible/futura_light_bt-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'futura_mdcn_btmedium';
-    src: url('../compatible/futura_medium_condensed_bt-webfont.woff2') format('woff2'),
-         url('../compatible/futura_medium_condensed_bt-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Futura";
+  src: url("../fonts/futura-bold.ttf");
+  font-weight:bold;
+  font-style: normal;
 }
 
 html {
@@ -144,15 +139,16 @@ a:hover {
 
 .nav-item a {
   text-decoration: none;
-  color: white; }
+  color: white;
+  font-family: inherit;
+}
 
 .dropbtn {
     color: white;
     margin: 0;
     padding: 0;
     border: none; 
-    font-size: 2em;
-    font-family: 'futura_mdcn_btmedium', sans-serif;
+    font-size: 1.8em;
     font-weight: normal;
     font-style: normal;
   }
@@ -165,15 +161,16 @@ a:hover {
     display: none;
     margin-left: -15px;
     position: absolute;
-    min-width: 200px;
+    min-width: 150px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); }
 
 .dropdown-content a {
     color: white;
-    padding: 0.5em 0.5em;
+    padding: 12px 16px;
     text-decoration: none;
     display: block; 
     font-size: 2em;
+    font-family: inherit;
   }
 
 .dropdown:hover .dropdown-content { display: block; }

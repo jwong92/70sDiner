@@ -153,7 +153,7 @@ a:hover {
     margin: 0;
     padding: 0;
     border: none; 
-    font-size: 2em;
+    font-size: 1.8em;
     font-family: 'futura_mdcn_btmedium', sans-serif;
     font-weight: normal;
     font-style: normal;
@@ -167,12 +167,12 @@ a:hover {
     display: none;
     margin-left: -15px;
     position: absolute;
-    min-width: 200px;
+    min-width: 150px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); }
 
 .dropdown-content a {
     color: white;
-    padding: 1em 0.5em;
+    padding: 12px 16px;
     text-decoration: none;
     display: block; 
     font-size: 2em;

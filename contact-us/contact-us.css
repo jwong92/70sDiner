@@ -29,35 +29,35 @@ hex: F2ECE0
 /*FONTS*/
 @font-face {
   font-family: "Milkshake";
-  src: url("../Fonts/Milkshake.otf") format("opentype");
-  src: url("../Fonts/Milkshake.ttf") format("truetype");
+  src: url("../fonts/Milkshake.otf") format("opentype");
+  src: url("../fonts/Milkshake.ttf") format("truetype");
   font-style: normal;
 }
 
 @font-face {
   font-family: "OstrichSans";
-  src: url("../Fonts/ostrich-regular.ttf") format("truetype");
+  src: url("../fonts/ostrich-regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "OstrichSans";
-  src: url("../Fonts/OstrichSans-Bold.otf") format("opentype");
+  src: url("../fonts/OstrichSans-Bold.otf") format("opentype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Futura";
-  src: url("../Fonts/futura-med-cond.ttf") format("truetype");
+  src: url("../fonts/futura-med-cond.ttf") format("truetype");
   font-weight:normal;
   font-style:normal;
 }
 
 @font-face {
   font-family: "Futura";
-  src: url("../Fonts/futura-bold.ttf");
+  src: url("../fonts/futura-bold.ttf");
   font-weight:bold;
   font-style: normal;
 }
@@ -214,7 +214,7 @@ h3 {
     margin: 0;
     padding: 0;
     border: none; 
-    font-size: 2em;
+    font-size: 1.8em;
     font-family: 'futura_mdcn_btmedium', sans-serif;
     font-weight: normal;
     font-style: normal;
@@ -228,12 +228,12 @@ h3 {
     display: none;
     margin-left: -15px;
     position: absolute;
-    min-width: 200px;
+    min-width: 150px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); }
 
 .dropdown-content a {
     color: white;
-    padding: 1em 0.5em;
+    padding: 12px 16px;
     text-decoration: none;
     display: block; 
     font-size: 2em;
