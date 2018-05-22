@@ -1,4 +1,3 @@
-
 /*FONTS*/
 @font-face {
   font-family: "Milkshake";
@@ -181,11 +180,6 @@ a:hover {
 
 #navigation div:nth-child(5), #navigation div:nth-child(6) {
     text-align: right; }
-
-.content-wrapper {
-  width: 80%;
-  margin: 0 auto;
-}
 
 /* SAME COLOR */
 footer, .base_bg, .base_tp, .nav_bar, .dropbtn, .dropdown-content {

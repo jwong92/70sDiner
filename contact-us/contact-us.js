@@ -2,20 +2,35 @@ $(document).ready(function(){
 
 
   // NAV
-  // https://api.jquery.com/event.data/
-  var dropDowns = 2;
+  // // https://api.jquery.com/event.data/
+  // var dropDowns = 2;
 
-  for (var i=1; i<=dropDowns; i++) {
-    //on hover of the correct a, display the correct dropdown
-    var link = ".drop-"+[i];
-    $(link).mouseover({value: i}, function(e){
-      $(".drop-down-content-"+[e.data.value]).css("display", "block");
-      $(".drop-down-content-"+[e.data.value]).addClass("drop-down-style");
+  // for (var i=1; i<=dropDowns; i++) {
+  //   //on hover of the correct a, display the correct dropdown
+  //   var link = ".drop-"+[i];
+  //   $(link).mouseover({value: i}, function(e){
+  //     $(".drop-down-content-"+[e.data.value]).css("display", "block");
+  //     $(".drop-down-content-"+[e.data.value]).addClass("drop-down-style");
+  //   });
+  //   $(link).mouseleave({value: i}, function(e){
+  //     $(".drop-down-content-"+[e.data.value]).css("display", "none");
+  //   });
+  // }//END NAV
+
+  $('.dropdown-content a').hover(function () {
+    $(this).css("color", "red");
+  }, // Change to red
+    function () {
+      $(this).css("color", "white"); // Then back to white
     });
-    $(link).mouseleave({value: i}, function(e){
-      $(".drop-down-content-"+[e.data.value]).css("display", "none");
+
+  $('.dropbtn').hover(function () {
+    $(this).css("color", "red");
+  }, // Change to red
+    function () {
+      $(this).css("color", "white"); // Then back to white
     });
-  }//END NAV
+
 
 // https://jonsuh.com/blog/detect-the-end-of-css-animations-and-transitions-with-javascript/
 

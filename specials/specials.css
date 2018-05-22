@@ -79,9 +79,55 @@ a:hover {
 
 /* HEADER */
 
+/* LOGO */
 
+.title_box {
+  position: relative;
+  height: 95px;
+  width: 225px;
+  margin: 20px auto;
+  font-family: "Milkshake", sans-serif;
+  text-shadow: 0 0 7px #FFF, 0 0 25px #D92818;
+}
 
-/* LOGO AND NAV */
+ .title_box span{
+  color: #FF3B3F;
+}
+
+.The70 {
+  position: absolute;
+  font-size: 35px;
+  transform: rotate(-20deg);
+}
+
+.Diner {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  font-size: 80px;
+}
+
+.base_bg {
+  position: absolute;
+  top: 32px;
+  left: 7px;
+  width: 230px;
+  height:70px;
+  border-radius: 20px;
+  background-color: #4AC0BF;
+}
+
+.base_tp {
+  position: absolute;
+  width: 70px;
+  height:70px;
+  top: 5px;
+  left: 85px;
+  border-radius: 40px;
+  background-color: #4AC0BF;
+}
+
+/* ==== NAVIGATION ==== */
 .nav-flex {
   display:flex;
   flex-wrap:nowrap;
@@ -89,67 +135,26 @@ a:hover {
 
 .nav-item { flex: 1 0 0;}
 
-/* ==== HEADER ==== */
-.title_box {
-  position: relative;
-  height: 95px;
-  width: 225px;
-  margin: 20px auto;
-  color: #FF3B3F;
-  font-family: "milkshake", cursive;
-  text-shadow: 0 0 7px white, 0 0 25px #D92818; }
-
-.The70 {
-    position: absolute;
-    font-size: 50px;
-    transform: rotate(-20deg);
-    left: -50px;
-  }
-
-.Diner {
-    position: absolute;
-    top: 10px;
-    left: -9px;
-    font-size: 110px;
-  }
-
-.base_bg {
-    position: absolute;
-    top: 41px;
-    left: -44px;
-    width: 334px;
-    height: 100px;
-    border-radius: 20px;
-  }
-
-.base_tp {
-    position: absolute;
-    width: 91px;
-    height: 91px;
-    top: 4px;
-    left: 85px;
-    border-radius: 50%;
-  }
-
-/* ==== NAVIGATION ==== */
 .nav_bar {
   position: absolute;
   top: 75px;
   width: 100%;
-  height: 50px; 
+  height: 33px; 
 }
 
 .nav-item a {
   text-decoration: none;
-  color: white; }
+  color: white;
+  font-family: 'futura_mdcn_btmedium', sans-serif;
+}
 
 .dropbtn {
     color: white;
     margin: 0;
     padding: 0;
     border: none; 
-    font-size: 3em;
-    font-family: 'Futura', sans-serif;
+    font-size: 2em;
+    font-family: 'futura_mdcn_btmedium', sans-serif;
     font-weight: normal;
     font-style: normal;
   }
@@ -167,10 +172,10 @@ a:hover {
 
 .dropdown-content a {
     color: white;
-    padding: 0.5em 0.5em;
+    padding: 1em 0.5em;
     text-decoration: none;
     display: block; 
-    font-size: 3em;
+    font-size: 2em;
   }
 
 .dropdown:hover .dropdown-content { display: block; }
@@ -183,14 +188,9 @@ a:hover {
   margin: 0 auto;
 }
 
-/* SAME COLOR */
 footer, .base_bg, .base_tp, .nav_bar, .dropbtn, .dropdown-content {
   background-color: #4AC0BF; }
 
-/* CONTENT WRAPPER */
-.content-wrapper {
-  width: 80%;
-  margin: 0 auto;}
 
 /* TITLE */
 #title {

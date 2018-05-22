@@ -146,7 +146,7 @@ h3 {
   position: relative;
   height: 95px;
   width: 225px;
-  margin: 0px auto 20px auto;
+  margin: 20px auto;
   font-family: "Milkshake", sans-serif;
   text-shadow: 0 0 7px #FFF, 0 0 25px #D92818;
 }
@@ -188,39 +188,69 @@ h3 {
   background-color: #4AC0BF;
 }
 
-/* NAVIGATION */
-#navbar {
-  background-color: #4AC0BF;
-  height: 2.2rem;
-  padding-top: 0.1rem;
+/* ==== NAVIGATION ==== */
+.nav-flex {
+  display:flex;
+  flex-wrap:nowrap;
+  margin-top: 4px; }
+
+.nav-item { flex: 1 0 0;}
+
+.nav_bar {
   position: absolute;
+  top: 75px;
   width: 100%;
-  top: calc(105px - 1.8rem);
+  height: 33px; 
 }
 
-.drop-down {
-  display: flex;
-  justify-content: space-around;
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  font-family: 'futura_mdcn_btmedium', sans-serif;
 }
 
-[class^="drop-down-content"] {
-  display: none;
-  padding-bottom: 0.5rem;
+.dropbtn {
+    color: white;
+    margin: 0;
+    padding: 0;
+    border: none; 
+    font-size: 2em;
+    font-family: 'futura_mdcn_btmedium', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.dropdown {
+    position: relative;
+    display: inline-block; }
+
+.dropdown-content {
+    display: none;
+    margin-left: -15px;
+    position: absolute;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); }
+
+.dropdown-content a {
+    color: white;
+    padding: 1em 0.5em;
+    text-decoration: none;
+    display: block; 
+    font-size: 2em;
+  }
+
+.dropdown:hover .dropdown-content { display: block; }
+
+#navigation div:nth-child(5), #navigation div:nth-child(6) {
+    text-align: right; }
+
+.content-wrapper {
+  width: 80%;
+  margin: 0 auto;
 }
 
-.drop-down li a {
-  font-size: 2.5em;
-  padding-left: 0.5rem;
-}
-
-.drop-down li:nth-child(1), .drop-down li:nth-child(2) {
-  width: 15em;
-}
-
-.drop-down-style {
-  background-color:#4AC0BF;
-  border-radius: 0 0 15px 15px;
-}
+footer, .base_bg, .base_tp, .nav_bar, .dropbtn, .dropdown-content {
+  background-color: #4AC0BF; }
 
 /*MAIN HEADING*/
 .main-heading-wrapper {
